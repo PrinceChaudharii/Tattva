@@ -9,7 +9,7 @@
 # ──────────────────────────────────────────────────────────────────────────────
 
 # ── Stage 1: Dependencies ─────────────────────────────────────────────────────
-FROM node:20-alpine AS deps
+FROM node:26-alpine AS deps
 
 RUN apk add --no-cache libc6-compat
 
@@ -37,7 +37,7 @@ COPY packages/validators/package.json ./packages/validators/
 RUN pnpm install --frozen-lockfile --prefer-offline
 
 # ── Stage 2: Builder ──────────────────────────────────────────────────────────
-FROM node:20-alpine AS builder
+FROM node:26-alpine AS builder
 
 RUN corepack enable && corepack prepare pnpm@11.3.0 --activate
 
@@ -67,7 +67,7 @@ ENV NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL}
 RUN pnpm --filter @tattva/web build
 
 # ── Stage 3: Runner (production) ──────────────────────────────────────────────
-FROM node:20-alpine AS runner
+FROM node:26-alpine AS runner
 
 RUN apk add --no-cache curl
 
