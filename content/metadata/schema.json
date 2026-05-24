@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tattva.edu/schemas/content-frontmatter",
+  "title": "Tattva Content Frontmatter Schema",
+  "description": "Validation schema for MDX content frontmatter in the Tattva education platform. Every index.mdx and exercises.mdx file must conform to this schema.",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "Display title of the chapter or exercise set"
+    },
+    "subject": {
+      "type": "string",
+      "enum": [
+        "physics",
+        "chemistry",
+        "mathematics",
+        "biology",
+        "english",
+        "hindi",
+        "history",
+        "geography",
+        "political-science",
+        "economics",
+        "accountancy",
+        "business-studies",
+        "sociology",
+        "psychology",
+        "computer-science"
+      ],
+      "description": "Subject slug — must match a key in subjects.json"
+    },
+    "class": {
+      "type": "integer",
+      "minimum": 6,
+      "maximum": 12,
+      "description": "NCERT class number (6 through 12)"
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Chapter number within the textbook"
+    },
+    "ncertReference": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Citation of the exact NCERT textbook and chapter, e.g. 'Physics Textbook for Class XI, Chapter 2'"
+    },
+    "locale": {
+      "type": "string",
+      "pattern": "^[a-z]{2}(-[A-Z]{2})?$",
+      "description": "ISO 639-1 language code (with optional region), e.g. 'en', 'hi', 'mr'"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "review", "published"],
+      "default": "draft",
+      "description": "Publication status: draft → review → published"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$",
+      "description": "Semantic version string (semver), e.g. '1.0.0', '2.1.3-beta.1'"
+    },
+    "lastReviewed": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date when the content was last reviewed, e.g. '2024-01-15'"
+    },
+    "contributors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Full name or display name of the contributor"
+          },
+          "role": {
+            "type": "string",
+            "enum": ["author", "reviewer", "translator", "editor"],
+            "description": "Role of the contributor in this content piece"
+          },
+          "userId": {
+            "type": "string",
+            "description": "Optional — links to the contributor's user ID in the platform database"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Optional — contact email for the contributor"
+          }
+        },
+        "required": ["name", "role"],
+        "additionalProperties": false
+      },
+      "description": "List of contributors with their roles"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 50,
+        "pattern": "^[a-z0-9][a-z0-9-]*$"
+      },
+      "minItems": 1,
+      "maxItems": 20,
+      "uniqueItems": true,
+      "description": "Freeform lowercase kebab-case tags for discovery and search"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": ["foundational", "intermediate", "advanced"],
+      "default": "foundational",
+      "description": "Overall difficulty level of the content"
+    },
+    "estimatedReadingTime": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 300,
+      "description": "Estimated reading time in minutes"
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Reference to prerequisite content, e.g. 'physics/class-11/chapter-01-units-and-measurements'"
+      },
+      "description": "List of prerequisite content paths"
+    },
+    "sourceVersion": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$",
+      "description": "Translations only — semver of the English source content this translation is based on"
+    },
+    "contentType": {
+      "type": "string",
+      "enum": ["chapter", "exercises", "supplement", "summary"],
+      "default": "chapter",
+      "description": "Type of content in this file"
+    },
+    "figures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Figure identifier, e.g. 'fig-2.1'"
+          },
+          "caption": {
+            "type": "string",
+            "description": "Figure caption text"
+          },
+          "src": {
+            "type": "string",
+            "description": "Relative path to the figure file"
+          },
+          "alt": {
+            "type": "string",
+            "description": "Alt text for accessibility"
+          }
+        },
+        "required": ["id", "caption", "src", "alt"],
+        "additionalProperties": false
+      },
+      "description": "List of figures referenced in the content"
+    },
+    "relatedChapters": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Paths to related chapters, e.g. 'physics/class-11/chapter-02-motion-in-a-straight-line'"
+      },
+      "description": "Cross-references to related content"
+    }
+  },
+  "required": [
+    "title",
+    "subject",
+    "class",
+    "chapter",
+    "ncertReference",
+    "locale",
+    "status",
+    "version",
+    "contributors"
+  ],
+  "additionalProperties": false,
+
+  "$defs": {
+    "localeCodes": {
+      "type": "string",
+      "enum": ["en", "hi", "mr", "ta", "te", "kn", "bn", "gu", "ur", "as", "or", "pa", "ml", "sd", "ks", "doi", "mni", "bo", "ne"],
+      "description": "Supported locale codes for Tattva content"
+    },
+    "subjectSlugs": {
+      "type": "string",
+      "enum": [
+        "physics",
+        "chemistry",
+        "mathematics",
+        "biology",
+        "english",
+        "hindi",
+        "history",
+        "geography",
+        "political-science",
+        "economics",
+        "accountancy",
+        "business-studies",
+        "sociology",
+        "psychology",
+        "computer-science"
+      ],
+      "description": "All valid subject slugs"
+    }
+  }
+}

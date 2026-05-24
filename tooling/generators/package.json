@@ -1,0 +1,20 @@
+{
+  "name": "@tattva/generators",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Code generation scaffolding CLI for the Tattva monorepo",
+  "license": "MIT",
+  "bin": {
+    "tattva-gen": "./cli.js"
+  },
+  "files": [
+    "cli.js",
+    "templates"
+  ],
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.4.1"
+  }
+}

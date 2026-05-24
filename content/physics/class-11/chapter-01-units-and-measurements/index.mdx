@@ -1,0 +1,245 @@
+---
+title: "Units and Measurements"
+subject: physics
+class: 11
+chapter: 1
+ncertReference: "Physics Textbook for Class XI, Chapter 2"
+locale: en
+status: draft
+version: 1.0.0
+lastReviewed: "2024-01-15"
+contributors:
+  - name: "Tattva Community"
+    role: author
+tags: [physics, units, measurements, dimensions, errors]
+difficulty: foundational
+estimatedReadingTime: 45
+---
+
+## 1.1 Introduction
+
+Measurement is at the heart of physics. Every physical law expresses a quantitative relationship between measurable quantities. Before we can describe the motion of a planet, the current in a wire, or the energy released in a reaction, we must first agree on **what** we are measuring and **how** we express the result.
+
+A **measurement** always yields a number multiplied by a unit. Saying a table is "2 long" is meaningless — 2 metres and 2 centimetres describe very different lengths. This chapter establishes the framework of units and measurements that underpins all of physics.
+
+> **Key Idea:** A physical quantity is always expressed as the product of a numerical value and a unit: $Q = n \times u$.
+
+---
+
+## 1.2 The International System of Units (SI)
+
+Historically, different regions used different systems — the CGS (centimetre-gram-second), FPS (foot-pound-second), and MKS (metre-kilogram-second) systems. This created confusion in commerce and science. In 1960, the General Conference on Weights and Measures (CGPM) adopted the **Système International d'Unités** (SI), a coherent and rationalised system now used universally in science.
+
+### 1.2.1 Seven Base Quantities
+
+The SI is built on seven base quantities, each with a precisely defined base unit:
+
+| Base Quantity | Unit Name | Unit Symbol | Defining Constant |
+|---|---|---|---|
+| Length | metre | m | Speed of light in vacuum, $c$ |
+| Mass | kilogram | kg | Planck constant, $h$ |
+| Time | second | s | Hyperfine transition frequency of Cs-133, $\Delta\nu_{\text{Cs}}$ |
+| Electric current | ampere | A | Elementary charge, $e$ |
+| Thermodynamic temperature | kelvin | K | Boltzmann constant, $k_B$ |
+| Amount of substance | mole | mol | Avogadro constant, $N_A$ |
+| Luminous intensity | candela | cd | Luminous efficacy, $K_{cd}$ |
+
+Since the 2019 SI redefinition, all seven base units are defined by fixing the numerical values of fundamental physical constants. The kilogram, for instance, is now defined by setting the Planck constant $h$ to exactly $6.626\,070\,15 \times 10^{-34}$ J·s.
+
+### 1.2.2 Supplementary and Derived Units
+
+Two supplementary units exist for plane angle (radian, rad) and solid angle (steradian, sr). All other SI units are **derived** from the base units by multiplication and division. Some commonly used derived units have special names:
+
+| Derived Quantity | Special Name | Symbol | In Base Units |
+|---|---|---|---|
+| Force | newton | N | $\text{kg} \cdot \text{m} \cdot \text{s}^{-2}$ |
+| Pressure | pascal | Pa | $\text{kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2}$ |
+| Energy | joule | J | $\text{kg} \cdot \text{m}^{2} \cdot \text{s}^{-2}$ |
+| Power | watt | W | $\text{kg} \cdot \text{m}^{2} \cdot \text{s}^{-3}$ |
+
+---
+
+## 1.3 Measurement of Length
+
+The SI unit of length is the metre. However, no single instrument can measure lengths across the enormous range encountered in physics — from subatomic distances ($\sim 10^{-15}$ m) to the size of the observable universe ($\sim 10^{26}$ m).
+
+### 1.3.1 Measuring Very Small Distances
+
+For distances too small to see, indirect methods are used:
+
+- **Vernier callipers** — precision $\sim 10^{-4}$ m
+- **Screw gauge (micrometer)** — precision $\sim 10^{-5}$ m
+- **Electron microscope** — resolves down to $\sim 10^{-10}$ m
+- **X-ray diffraction** — measures interatomic spacing ($\sim 10^{-10}$ m)
+
+### 1.3.2 Measuring Very Large Distances
+
+Large distances are measured using the **parallax method**. When an object is viewed from two different positions, it appears to shift against a distant background. If the baseline (distance between the two observation points) is $b$ and the parallax angle is $\theta$, then the distance $D$ of the object is:
+
+$$D = \frac{b}{\theta}$$
+
+where $\theta$ is in radians. This method is used to measure distances to nearby stars, using the Earth's orbital diameter ($2\,\text{AU} = 3.016 \times 10^{11}$ m) as the baseline.
+
+**Example:** The parallax angle of a star is $0.76''$ (arcseconds). Find its distance in parsecs.
+
+$$d = \frac{1}{0.76} \approx 1.316 \text{ parsecs}$$
+
+> **Key Idea:** 1 parsec is the distance at which 1 AU subtends an angle of 1 arcsecond. $1 \text{ pc} \approx 3.086 \times 10^{16}$ m.
+
+---
+
+## 1.4 Measurement of Mass
+
+Mass is measured using a **balance**. For ordinary masses (milligrams to kilograms), a common balance suffices. For very small masses (mass of an electron $\approx 9.1 \times 10^{-31}$ kg) or very large masses (mass of the Sun $\approx 2.0 \times 10^{30}$ kg), indirect methods are used:
+
+- **Gravitational methods** — orbital mechanics for celestial bodies
+- **Mass spectrograph** — for atomic and subatomic particles
+
+The SI unit of mass, the kilogram, was historically defined by a platinum-iridium prototype kept at the International Bureau of Weights and Measures (BIPM) in Sèvres, France. Since 2019, it is defined via the Planck constant.
+
+### 1.4.1 Range of Masses
+
+| Object | Mass (kg) |
+|---|---|
+| Electron | $9.109 \times 10^{-31}$ |
+| Proton | $1.673 \times 10^{-27}$ |
+| DNA molecule | $\sim 10^{-17}$ |
+| Mosquito | $\sim 10^{-5}$ |
+| Human | $\sim 10^{2}$ |
+| Earth | $5.972 \times 10^{24}$ |
+| Sun | $1.989 \times 10^{30}$ |
+| Observable universe | $\sim 10^{53}$ |
+
+---
+
+## 1.5 Measurement of Time
+
+The SI unit of time is the second. A **caesium atomic clock** achieves an accuracy of 1 part in $10^{13}$, equivalent to losing or gaining no more than one second in 3 million years.
+
+Time intervals are measured using:
+
+- **Mechanical stopwatches** — precision $\sim 0.1$ s
+- **Electronic stopwatches** — precision $\sim 0.01$ s
+- **Atomic clocks** — precision $\sim 10^{-13}$ s
+- **Decay clocks** — for geological timescales ($10^{6}$ to $10^{9}$ years)
+
+---
+
+## 1.6 Accuracy, Precision, and Errors in Measurement
+
+### 1.6.1 Accuracy vs Precision
+
+- **Accuracy** refers to how close a measured value is to the true value.
+- **Precision** refers to the resolution or repeatability of the measurement.
+
+A measurement can be precise without being accurate (consistently off-target) and accurate without being precise (widely scattered around the true value).
+
+### 1.6.2 Types of Errors
+
+**Systematic errors** are errors that tend to be in one direction (always positive or always negative). Their causes include:
+
+- Instrumental errors (zero error, faulty calibration)
+- Imperfections in experimental technique
+- Personal errors (observer bias)
+
+Systematic errors can, in principle, be eliminated by improving technique or applying corrections.
+
+**Random errors** are errors that occur irregularly and unpredictably. They arise from unpredictable fluctuations in experimental conditions. Random errors can be reduced by:
+
+- Repeating the measurement many times
+- Taking the arithmetic mean
+
+### 1.6.3 Absolute, Relative, and Percentage Error
+
+If the true value of a quantity is $a$ and the measured value is $a_{\text{meas}}$, then:
+
+$$\text{Absolute error} = \Delta a = |a_{\text{meas}} - a|$$
+
+$$\text{Relative error} = \frac{\Delta a}{a}$$
+
+$$\text{Percentage error} = \frac{\Delta a}{a} \times 100\%$$
+
+For $n$ measurements $a_1, a_2, \ldots, a_n$, the arithmetic mean is:
+
+$$\bar{a} = \frac{1}{n}\sum_{i=1}^{n} a_i$$
+
+The absolute errors are $\Delta a_i = |a_i - \bar{a}|$, and the **mean absolute error** is:
+
+$$\overline{\Delta a} = \frac{1}{n}\sum_{i=1}^{n} \Delta a_i$$
+
+The result is then expressed as $a = \bar{a} \pm \overline{\Delta a}$.
+
+---
+
+## 1.7 Significant Figures
+
+The number of **significant figures** in a measurement indicates the precision of the measurement. The rules for determining significant figures are:
+
+1. **All non-zero digits** are significant. ($25.4$ has 3 significant figures)
+2. **Zeros between non-zero digits** are significant. ($2005$ has 4 significant figures)
+3. **Trailing zeros** in a number containing a decimal point are significant. ($2.30$ has 3 significant figures)
+4. **Leading zeros** are not significant. ($0.025$ has 2 significant figures)
+5. **Trailing zeros** in a number without a decimal point are ambiguous — use scientific notation. ($1200$ could be 2, 3, or 4 significant figures; $1.2 \times 10^3$ has 2)
+
+### 1.7.1 Rules for Arithmetic Operations
+
+**Multiplication and division:** The result should have as many significant figures as the number with the **fewest** significant figures.
+
+$$4.23 \times 2.1 = 8.883 \approx 8.9 \quad (\text{2 significant figures})$$
+
+**Addition and subtraction:** The result should have the same number of **decimal places** as the number with the fewest decimal places.
+
+$$12.3 + 4.57 = 16.87 \approx 16.9 \quad (\text{1 decimal place})$$
+
+---
+
+## 1.8 Dimensions of Physical Quantities
+
+The **dimensions** of a physical quantity express it in terms of the seven base quantities. We use square brackets to denote dimensions: $[M]$ for mass, $[L]$ for length, $[T]$ for time, $[I]$ for current, $[\Theta]$ for temperature, $[N]$ for amount of substance, and $[J]$ for luminous intensity.
+
+### 1.8.1 Dimensional Formulae
+
+Some important dimensional formulae:
+
+| Quantity | Dimensional Formula |
+|---|---|
+| Force | $[M L T^{-2}]$ |
+| Work, Energy | $[M L^{2} T^{-2}]$ |
+| Power | $[M L^{2} T^{-3}]$ |
+| Pressure | $[M L^{-1} T^{-2}]$ |
+| Frequency | $[T^{-1}]$ |
+| Charge | $[I T]$ |
+| Voltage | $[M L^{2} T^{-3} I^{-1}]$ |
+
+### 1.8.2 Dimensional Analysis and Its Applications
+
+**Principle of homogeneity:** Only quantities with the same dimensions can be added, subtracted, or compared. This principle is used to:
+
+1. **Check dimensional consistency** of equations.
+2. **Derive relationships** between quantities (dimensional analysis).
+3. **Convert units** from one system to another.
+
+**Example:** Check the dimensional consistency of the equation $s = ut + \frac{1}{2}at^2$.
+
+- $[s] = [L]$
+- $[ut] = [L T^{-1}][T] = [L]$ ✓
+- $[\frac{1}{2}at^2] = [L T^{-2}][T^2] = [L]$ ✓
+
+All terms have the same dimension, so the equation is dimensionally consistent.
+
+> **Limitation:** Dimensional analysis cannot determine dimensionless constants (like $\frac{1}{2}$, $2\pi$, etc.) and cannot distinguish between quantities with the same dimensions (like work and torque, both $[M L^2 T^{-2}]$).
+
+---
+
+## 1.9 Summary
+
+- Physics is a quantitative science that relies on measurement.
+- The SI system has seven base units defined through fundamental constants.
+- Very small and very large distances require special techniques (parallax, diffraction).
+- Errors are classified as systematic or random; precision and accuracy are distinct concepts.
+- Significant figures communicate measurement uncertainty.
+- Dimensional analysis is a powerful tool for verifying equations and deriving relationships, but it has limitations.
+
+---
+
+*This chapter is aligned with NCERT Physics Textbook for Class XI, Chapter 2: Units and Measurements. Content is provided under the project's open-source license.*

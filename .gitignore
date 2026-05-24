@@ -1,0 +1,64 @@
+# ── Dependencies ──────────────────────────────────────────────
+node_modules
+.pnpm-store
+
+# ── Build outputs ─────────────────────────────────────────────
+.next
+out
+dist
+build
+.turbo
+.vercel
+
+# ── TypeScript ────────────────────────────────────────────────
+*.tsbuildinfo
+*.tsbuildinfo.*
+
+# ── Environment / secrets ─────────────────────────────────────
+.env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ── Database ──────────────────────────────────────────────────
+drizzle/meta
+drizzle/*.sql
+
+# ── Content generation ────────────────────────────────────────
+.contentlayer
+.content-collections
+
+# ── Coverage & testing ────────────────────────────────────────
+coverage
+.nyc_output
+
+# ── Debug ─────────────────────────────────────────────────────
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Editor / OS ───────────────────────────────────────────────
+.DS_Store
+*.pem
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────
+.idea
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ── Vercel ────────────────────────────────────────────────────
+.vercel
+
+# ── Cache ─────────────────────────────────────────────────────
+.cache
+.eslintcache

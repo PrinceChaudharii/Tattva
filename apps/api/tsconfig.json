@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@tattva/database": ["../../packages/database/src"],
+      "@tattva/database/*": ["../../packages/database/src/*"],
+      "@tattva/auth": ["../../packages/auth/src"],
+      "@tattva/auth/*": ["../../packages/auth/src/*"],
+      "@tattva/shared-types": ["../../packages/shared-types/src"],
+      "@tattva/shared-types/*": ["../../packages/shared-types/src/*"],
+      "@tattva/config": ["../../packages/config/src"],
+      "@tattva/config/*": ["../../packages/config/src/*"],
+      "@tattva/logger": ["../../packages/logger/src"],
+      "@tattva/logger/*": ["../../packages/logger/src/*"]
+    },
+    "plugins": [{ "name": "next" }]
+  },
+  "include": ["src", "next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", ".next", ".turbo"]
+}

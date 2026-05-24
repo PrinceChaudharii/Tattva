@@ -1,0 +1,24 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Tattva — Issue Template Configuration
+# ──────────────────────────────────────────────────────────────────────────────
+
+blank_issues_enabled: false
+
+contact_links:
+  - name: 💬 Discord Community
+    url: https://discord.gg/tattva
+    about: Ask questions, share ideas, and connect with the Tattva community on Discord.
+
+  - name: 📖 Documentation
+    url: https://tattva.org/docs
+    about: Browse the official documentation for setup guides, API reference, and contributing instructions.
+
+  - name: 🔒 Security Vulnerability
+    url: https://github.com/tattva-org/tattva/security/advisories/new
+    about: |
+      Report security vulnerabilities privately through GitHub Security Advisories.
+      Please do NOT file public issues for security vulnerabilities.
+
+  - name: ❓ Question / Support
+    url: https://github.com/tattva-org/tattva/discussions
+    about: Ask questions and get support from the community via GitHub Discussions.

@@ -1,0 +1,143 @@
+name: 📚 Content Issue
+description: Report errors, inaccuracies, or improvements in educational content
+labels: ["content", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Tattva's educational content! Accuracy is critical for our learners.
+        Please provide as much detail as possible so we can verify and fix the issue.
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type
+      description: What type of content issue are you reporting?
+      options:
+        - "Factual error — Incorrect information"
+        - "Typo / Grammar / Spelling"
+        - "Missing content — Topic or section is incomplete"
+        - "Outdated content — Not aligned with latest NCERT syllabus"
+        - "Diagram / Image issue"
+        - "Accessibility issue with content"
+        - "Translation error (Hindi/other language)"
+        - "Content suggestion — New topic or improvement"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: subject
+    attributes:
+      label: Subject
+      description: Which subject does this content belong to?
+      options:
+        - Mathematics
+        - Physics
+        - Chemistry
+        - Biology
+        - English
+        - Hindi
+        - Social Science
+        - History
+        - Geography
+        - Civics
+        - Economics
+        - Computer Science
+        - Sanskrit
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: class_level
+    attributes:
+      label: Class / Grade
+      description: Which class (grade) is this content for?
+      options:
+        - "Class 1"
+        - "Class 2"
+        - "Class 3"
+        - "Class 4"
+        - "Class 5"
+        - "Class 6"
+        - "Class 7"
+        - "Class 8"
+        - "Class 9"
+        - "Class 10"
+        - "Class 11"
+        - "Class 12"
+    validations:
+      required: true
+
+  - type: input
+    id: content_url
+    attributes:
+      label: Content URL or Path
+      description: Link to the page or the file path in the repository.
+      placeholder: "https://tattva.org/content/mathematics/class-10/quadratic-equations OR content/mathematics/class-10/lessons/quadratic-equations.mdx"
+    validations:
+      required: true
+
+  - type: input
+    id: chapter
+    attributes:
+      label: Chapter / Topic
+      description: Which chapter or topic is affected?
+      placeholder: "Quadratic Equations, Chapter 4"
+
+  - type: textarea
+    id: current_content
+    attributes:
+      label: Current (Incorrect) Content
+      description: |
+        Quote the exact text or describe the current content that needs correction.
+        Include section heading or paragraph number for precise identification.
+      placeholder: "The formula for quadratic equation is stated as x = (-b ± √(b²-4ac)) / 2c, but the denominator should be 2a."
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct_content
+    attributes:
+      label: Correct Content
+      description: |
+        What should the content say instead? Please provide the correct information.
+        Include NCERT textbook references if available.
+      placeholder: "The formula should be x = (-b ± √(b²-4ac)) / 2a. Reference: NCERT Mathematics Class 10, Chapter 4, Page 73."
+    validations:
+      required: true
+
+  - type: textarea
+    id: ncert_reference
+    attributes:
+      label: NCERT Reference
+      description: |
+        If available, provide the NCERT textbook reference for verification.
+        Include: Book name, Chapter, Page number, Edition (if known).
+      placeholder: "NCERT Mathematics Textbook for Class 10, Chapter 4: Quadratic Equations, Page 73, 2024 Edition"
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting Evidence
+      description: |
+        Any supporting evidence, references, or screenshots that confirm the correction.
+        This helps our reviewers verify the change quickly.
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      options:
+        - label: I have checked that this issue has not already been reported
+          required: true
+        - label: I have verified the correct information against the NCERT textbook or other reliable source
+          required: false
+        - label: I am a teacher/educator and can vouch for this correction
+          required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information.

@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+
+# Build outputs
+.next
+dist
+.turbo
+out
+build
+
+# Coverage
+coverage
+
+# Database
+drizzle
+
+# Generated
+.contentlayer
+.content-collections
+.svelte-kit
+
+# Lock files (reformatted by pnpm)
+pnpm-lock.yaml
+
+# OS files
+.DS_Store

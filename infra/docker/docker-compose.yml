@@ -1,0 +1,102 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Tattva — Local Development Infrastructure
+#
+# Usage:
+#   docker compose up -d              # Start all services
+#   docker compose up -d postgres     # Start only PostgreSQL
+#   docker compose logs -f redis      # Follow Redis logs
+#   docker compose down -v            # Stop and remove volumes
+# ──────────────────────────────────────────────────────────────────────────────
+
+services:
+  # ── PostgreSQL 16 ──────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: tattva-postgres
+    restart: unless-stopped
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-tattva}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-tattva_dev}
+      POSTGRES_DB: ${POSTGRES_DB:-tattva}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-tattva} -d ${POSTGRES_DB:-tattva}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - tattva-network
+
+  # ── Redis 7 ────────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: tattva-redis
+    restart: unless-stopped
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    command: >
+      redis-server
+        --requirepass ${REDIS_PASSWORD:-tattva_dev}
+        --maxmemory 256mb
+        --maxmemory-policy allkeys-lru
+        --appendonly yes
+        --appendfsync everysec
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "-a", "${REDIS_PASSWORD:-tattva_dev}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - tattva-network
+
+  # ── Adminer — PostgreSQL web UI ────────────────────────────────────────────
+  adminer:
+    image: adminer:latest
+    container_name: tattva-adminer
+    restart: unless-stopped
+    ports:
+      - "${ADMINER_PORT:-8080}:8080"
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+      ADMINER_DESIGN: pepa-linha
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - tattva-network
+
+  # ── Redis Commander — Redis web UI ─────────────────────────────────────────
+  redis-commander:
+    image: ghcr.io/joeferner/redis-commander:latest
+    container_name: tattva-redis-commander
+    restart: unless-stopped
+    ports:
+      - "${REDIS_COMMANDER_PORT:-8081}:8081"
+    environment:
+      REDIS_HOSTS: local:redis:6379:0:${REDIS_PASSWORD:-tattva_dev}
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - tattva-network
+
+# ── Volumes ──────────────────────────────────────────────────────────────────
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+# ── Network ──────────────────────────────────────────────────────────────────
+networks:
+  tattva-network:
+    driver: bridge
+    name: tattva-network

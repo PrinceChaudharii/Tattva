@@ -1,0 +1,254 @@
+---
+title: "Sets"
+subject: mathematics
+class: 11
+chapter: 1
+ncertReference: "Mathematics Textbook for Class XI, Chapter 1"
+locale: en
+status: draft
+version: 1.0.0
+lastReviewed: "2024-01-18"
+contributors:
+  - name: "Tattva Community"
+    role: author
+tags: [mathematics, sets, set-theory, operations, Venn-diagrams, relations]
+difficulty: foundational
+estimatedReadingTime: 40
+---
+
+## 1.1 Sets and Their Representations
+
+The concept of a **set** is fundamental in modern mathematics. A set is a well-defined collection of objects.
+
+> **"Well-defined"** means that there is no ambiguity about whether a given object belongs to the collection or not. For example, "the collection of all vowels in the English alphabet" is a set, but "the collection of all good students in a class" is not — "good" is subjective.
+
+The objects in a set are called its **elements** or **members**. If $x$ is an element of set $A$, we write $x \in A$ (read: "$x$ belongs to $A$"). If $x$ is not an element of $A$, we write $x \notin A$.
+
+### 1.1.1 Roster (Tabular) Form
+
+In roster form, all elements of the set are listed, separated by commas, within braces.
+
+**Examples:**
+
+- $V = \{a, e, i, o, u\}$ — the set of all vowels
+- $P = \{2, 3, 5, 7, 11, 13, \ldots\}$ — the set of all prime numbers
+
+> **Note:** In roster form, the order of elements does not matter, and repeated elements are written only once. $\{1, 2, 3\}$ and $\{3, 1, 2\}$ represent the same set.
+
+### 1.1.2 Set-Builder Form
+
+In set-builder form, we describe the property that all elements of the set satisfy.
+
+**Examples:**
+
+- $V = \{x : x \text{ is a vowel in the English alphabet}\}$
+- $E = \{x : x = 2n \text{ for some } n \in \mathbb{N}\}$ — the set of all even natural numbers
+- $D = \{x \in \mathbb{R} : x^2 - 5x + 6 = 0\}$ — the set of real roots of $x^2 - 5x + 6 = 0$
+
+---
+
+## 1.2 Types of Sets
+
+### 1.2.1 Empty Set (Null Set)
+
+A set that contains no elements is called the **empty set** or **null set**, denoted by $\emptyset$ or $\{\}$.
+
+**Example:** $\{x \in \mathbb{R} : x^2 + 1 = 0\} = \emptyset$ (no real number satisfies this equation).
+
+### 1.2.2 Singleton Set
+
+A set with exactly one element is called a **singleton set**.
+
+**Example:** $\{0\}$, $\{\emptyset\}$
+
+### 1.2.3 Finite and Infinite Sets
+
+A set is **finite** if it has a definite number of elements; otherwise, it is **infinite**.
+
+- Finite: $A = \{1, 2, 3, 4, 5\}$ — 5 elements
+- Infinite: $\mathbb{N} = \{1, 2, 3, \ldots\}$ — infinitely many elements
+
+The number of distinct elements in a finite set $A$ is called its **cardinality**, denoted $n(A)$.
+
+### 1.2.4 Equal Sets
+
+Two sets $A$ and $B$ are **equal** ($A = B$) if they have exactly the same elements.
+
+$\{1, 2, 3\} = \{3, 2, 1\}$ ✓ but $\{1, 2, 3\} \neq \{1, 2, 3, 3\}$... Actually these are equal since repetition doesn't count. ✓
+
+### 1.2.5 Subsets
+
+Set $A$ is a **subset** of set $B$ (written $A \subseteq B$) if every element of $A$ is also an element of $B$.
+
+- $\mathbb{N} \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R}$
+- Every set is a subset of itself: $A \subseteq A$
+- $\emptyset \subseteq A$ for every set $A$
+
+If $A \subseteq B$ and $A \neq B$, then $A$ is a **proper subset** of $B$, written $A \subset B$.
+
+### 1.2.6 Power Set
+
+The **power set** of a set $A$ is the set of all subsets of $A$, denoted $\mathcal{P}(A)$.
+
+If $n(A) = m$, then $n(\mathcal{P}(A)) = 2^m$.
+
+**Example:** If $A = \{a, b\}$, then $\mathcal{P}(A) = \{\emptyset, \{a\}, \{b\}, \{a, b\}\}$ and $n(\mathcal{P}(A)) = 2^2 = 4$.
+
+### 1.2.7 Universal Set
+
+The **universal set** (denoted $U$) is the set that contains all objects under consideration for a particular discussion. All other sets in that discussion are subsets of $U$.
+
+---
+
+## 1.3 Venn Diagrams
+
+A **Venn diagram** is a pictorial representation of sets using closed curves (usually circles) drawn inside a rectangle representing the universal set.
+
+```
+┌─────────────────────────┐
+│  U                      │
+│     ┌───────┐           │
+│     │   A   │           │
+│     │  ┌────┼────┐      │
+│     │  │ A∩B │  B │     │
+│     └──┼─────┼────┘     │
+│        └─────┘          │
+└─────────────────────────┘
+```
+
+Venn diagrams are powerful visual tools for understanding set operations and verifying set identities.
+
+---
+
+## 1.4 Operations on Sets
+
+### 1.4.1 Union
+
+The **union** of sets $A$ and $B$ is the set of all elements that belong to $A$ or $B$ or both:
+
+$$A \cup B = \{x : x \in A \text{ or } x \in B\}$$
+
+### 1.4.2 Intersection
+
+The **intersection** of sets $A$ and $B$ is the set of all elements common to both:
+
+$$A \cap B = \{x : x \in A \text{ and } x \in B\}$$
+
+If $A \cap B = \emptyset$, the sets $A$ and $B$ are **disjoint**.
+
+### 1.4.3 Difference
+
+The **difference** of sets $A$ and $B$ is the set of elements in $A$ but not in $B$:
+
+$$A - B = \{x : x \in A \text{ and } x \notin B\}$$
+
+Note: $A - B \neq B - A$ in general.
+
+### 1.4.4 Complement
+
+The **complement** of set $A$ (with respect to the universal set $U$) is the set of all elements of $U$ that are not in $A$:
+
+$$A' = U - A = \{x : x \in U \text{ and } x \notin A\}$$
+
+### 1.4.5 Symmetric Difference
+
+The **symmetric difference** of $A$ and $B$:
+
+$$A \triangle B = (A - B) \cup (B - A) = (A \cup B) - (A \cap B)$$
+
+---
+
+## 1.5 Laws of Set Operations
+
+### 1.5.1 Idempotent Laws
+
+$$A \cup A = A \qquad A \cap A = A$$
+
+### 1.5.2 Identity Laws
+
+$$A \cup \emptyset = A \qquad A \cap U = A$$
+
+### 1.5.3 Commutative Laws
+
+$$A \cup B = B \cup A \qquad A \cap B = B \cap A$$
+
+### 1.5.4 Associative Laws
+
+$$A \cup (B \cup C) = (A \cup B) \cup C \qquad A \cap (B \cap C) = (A \cap B) \cap C$$
+
+### 1.5.5 Distributive Laws
+
+$$A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$$
+
+$$A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$$
+
+### 1.5.6 De Morgan's Laws
+
+$$\overline{A \cup B} = \bar{A} \cap \bar{B}$$
+
+$$\overline{A \cap B} = \bar{A} \cup \bar{B}$$
+
+> **Key Idea:** De Morgan's laws are extremely useful. The complement of a union is the intersection of the complements, and vice versa.
+
+---
+
+## 1.6 Practical Problems on Union and Intersection of Two Sets
+
+### Formula for Cardinality
+
+For two finite sets $A$ and $B$:
+
+$$n(A \cup B) = n(A) + n(B) - n(A \cap B)$$
+
+For three finite sets $A$, $B$, and $C$:
+
+$$n(A \cup B \cup C) = n(A) + n(B) + n(C) - n(A \cap B) - n(B \cap C) - n(A \cap C) + n(A \cap B \cap C)$$
+
+**Example:** In a class of 50 students, 30 like Mathematics, 25 like Physics, and 15 like both. How many like at least one subject?
+
+$$n(M \cup P) = 30 + 25 - 15 = 40$$
+
+So 40 students like at least one subject. The number who like neither is $50 - 40 = 10$.
+
+---
+
+## 1.7 Important Number Sets
+
+| Symbol | Name | Description |
+|---|---|---|
+| $\mathbb{N}$ | Natural numbers | $\{1, 2, 3, \ldots\}$ |
+| $\mathbb{W}$ | Whole numbers | $\{0, 1, 2, 3, \ldots\}$ |
+| $\mathbb{Z}$ | Integers | $\{\ldots, -2, -1, 0, 1, 2, \ldots\}$ |
+| $\mathbb{Q}$ | Rational numbers | $\{p/q : p \in \mathbb{Z}, q \in \mathbb{Z}, q \neq 0\}$ |
+| $\mathbb{R}$ | Real numbers | All rational and irrational numbers |
+| $\mathbb{C}$ | Complex numbers | $\{a + bi : a, b \in \mathbb{R}\}$ |
+
+The chain of inclusions: $\mathbb{N} \subset \mathbb{W} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$.
+
+---
+
+## 1.8 Intervals as Subsets of $\mathbb{R}$
+
+Intervals are special subsets of real numbers:
+
+| Type | Notation | Set-Builder Form |
+|---|---|---|
+| Open interval | $(a, b)$ | $\{x \in \mathbb{R} : a < x < b\}$ |
+| Closed interval | $[a, b]$ | $\{x \in \mathbb{R} : a \leq x \leq b\}$ |
+| Semi-open (left) | $(a, b]$ | $\{x \in \mathbb{R} : a < x \leq b\}$ |
+| Semi-open (right) | $[a, b)$ | $\{x \in \mathbb{R} : a \leq x < b\}$ |
+
+---
+
+## 1.9 Summary
+
+- A set is a well-defined collection of objects; it can be represented in roster or set-builder form.
+- Important set types include the empty set, finite/infinite sets, equal sets, subsets, and the power set.
+- Set operations (union, intersection, difference, complement) obey algebraic laws including De Morgan's laws.
+- Venn diagrams provide visual representations of set relationships.
+- The inclusion-exclusion principle allows counting elements in unions and intersections of finite sets.
+- Number sets form a hierarchy: $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$.
+
+---
+
+*This chapter is aligned with NCERT Mathematics Textbook for Class XI, Chapter 1: Sets. Content is provided under the project's open-source license.*

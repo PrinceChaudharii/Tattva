@@ -1,0 +1,94 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for Tattva
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your feature suggestion! Please describe your idea clearly so we can evaluate it.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: |
+        What problem does this feature solve? Is your feature request related to a problem?
+        Please describe the pain point or use case.
+      placeholder: "Students cannot easily find related content across subjects, making cross-disciplinary learning difficult."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like to see implemented.
+      placeholder: "Add a 'Related Content' sidebar that shows linked lessons across subjects, e.g. Quadratic Equations (Math) → Projectile Motion (Physics)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: A clear description of any alternative solutions or features you've considered.
+      placeholder: "We could also add a full-text search across all subjects, or a tag-based navigation system."
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: What area of the platform does this feature relate to?
+      options:
+        - Content & Curriculum
+        - User Experience / UI
+        - Search & Navigation
+        - Assessment & Quizzes
+        - Accessibility
+        - Performance
+        - Developer Experience
+        - Infrastructure
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Target Audience
+      description: Who would primarily benefit from this feature?
+      options:
+        - Students (Classes 1-12)
+        - Teachers & Educators
+        - Parents
+        - Content Contributors
+        - Developers / Contributors
+      multiple: true
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - "Nice to have"
+        - "Important for better experience"
+        - "Critical — blocking current use case"
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockups / Examples
+      description: |
+        Attach any mockups, wireframes, or links to similar features in other products.
+        You can drag and drop images here.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context, screenshots, or references.

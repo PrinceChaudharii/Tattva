@@ -1,0 +1,121 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behavior in Tattva
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! Please fill out the sections below to help us investigate.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: "When I navigate to the lesson page for Class 10 Mathematics, the content fails to load and shows a blank screen."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: A clear description of what you expected to happen.
+      placeholder: "The lesson content should load with all sections visible."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened instead.
+      placeholder: "The page loads but the content area is completely blank."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - "Low — Minor cosmetic issue"
+        - "Medium — Feature partially broken, workaround available"
+        - "High — Major feature broken, no workaround"
+        - "Critical — Site down, data loss, or security issue"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: The URL where the bug occurred (if applicable).
+      placeholder: "https://tattva.org/content/mathematics/class-10/quadratic-equations"
+
+  - type: dropdown
+    id: subject
+    attributes:
+      label: Subject Area
+      description: Which subject area does this bug relate to?
+      options:
+        - "N/A — Not subject-specific"
+        - Mathematics
+        - Physics
+        - Chemistry
+        - Biology
+        - English
+        - Hindi
+        - Social Science
+        - Computer Science
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: |
+        Please provide details about your environment.
+        For browsers: include browser name, version, and device type.
+        For API/backend issues: include OS, Node.js version, etc.
+      placeholder: |
+        - Browser: Chrome 121, macOS Sonoma
+        - Device: Desktop
+        - Screen size: 1920x1080
+      value: |
+        - Browser:
+        - Device:
+        - OS:
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs & Screenshots
+      description: |
+        Please include any relevant console logs, error messages, or screenshots.
+        You can drag and drop images here.
+      placeholder: "Paste console errors or attach screenshots"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context about the problem (recent changes, related issues, etc.).

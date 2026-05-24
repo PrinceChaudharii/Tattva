@@ -1,0 +1,196 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-15",
+  "description": "Central registry of contributors to Tattva content. Each contributor has a unique ID and one or more roles. This file is the source of truth for attribution across all content files.",
+  "roles": {
+    "author": {
+      "label": "Author",
+      "description": "Writes or substantially revises educational content. Responsible for accuracy, NCERT alignment, and pedagogical quality.",
+      "permissions": ["create", "edit", "submit-for-review"]
+    },
+    "reviewer": {
+      "label": "Reviewer",
+      "description": "Reviews content for factual accuracy, NCERT alignment, pedagogical soundness, and completeness before publication.",
+      "permissions": ["review", "approve", "request-changes"]
+    },
+    "editor": {
+      "label": "Editor",
+      "description": "Copy-edits for style, grammar, formatting, consistency, and accessibility. Ensures MDX formatting standards are met.",
+      "permissions": ["edit", "submit-for-review"]
+    },
+    "translator": {
+      "label": "Translator",
+      "description": "Creates or maintains translations of content in supported locales. Ensures linguistic accuracy and cultural appropriateness.",
+      "permissions": ["create-translation", "edit-translation", "submit-for-review"]
+    }
+  },
+  "contributors": [
+    {
+      "id": "contrib-001",
+      "name": "Tattva Community",
+      "email": "community@tattva.edu",
+      "roles": ["author", "editor"],
+      "profileUrl": "https://github.com/tattva-edu",
+      "joinedDate": "2023-06-01",
+      "bio": "The collective author representing community-contributed content on the Tattva platform.",
+      "contributions": {
+        "chapters": 3,
+        "reviews": 0,
+        "translations": 0
+      }
+    },
+    {
+      "id": "contrib-002",
+      "name": "Dr. Ananya Sharma",
+      "email": "ananya.sharma@tattva.edu",
+      "roles": ["author", "reviewer"],
+      "profileUrl": "https://github.com/ananya-sharma",
+      "joinedDate": "2023-08-15",
+      "bio": "Physics educator with 12 years of experience teaching NCERT curriculum at senior secondary level. PhD in Condensed Matter Physics from IIT Delhi.",
+      "subjects": ["physics"],
+      "classes": [11, 12],
+      "contributions": {
+        "chapters": 5,
+        "reviews": 8,
+        "translations": 0
+      }
+    },
+    {
+      "id": "contrib-003",
+      "name": "Prof. Raghavendra Joshi",
+      "email": "r.joshi@tattva.edu",
+      "roles": ["reviewer"],
+      "profileUrl": "https://github.com/raghav-joshi",
+      "joinedDate": "2023-09-01",
+      "bio": "Retired Professor of Chemistry from Mumbai University. Specialises in physical chemistry and chemical thermodynamics. NCERT textbook review committee member (2015–2018).",
+      "subjects": ["chemistry"],
+      "classes": [11, 12],
+      "contributions": {
+        "chapters": 0,
+        "reviews": 14,
+        "translations": 0
+      }
+    },
+    {
+      "id": "contrib-004",
+      "name": "Priya Menon",
+      "email": "priya.menon@tattva.edu",
+      "roles": ["translator", "author"],
+      "profileUrl": "https://github.com/priya-menon",
+      "joinedDate": "2023-10-10",
+      "bio": "Bilingual educator (English–Hindi–Marathi) specialising in science content translation. M.Sc. in Physics from Pune University. 8 years of teaching experience.",
+      "locales": ["hi", "mr"],
+      "subjects": ["physics", "chemistry"],
+      "classes": [11, 12],
+      "contributions": {
+        "chapters": 2,
+        "reviews": 0,
+        "translations": 6
+      }
+    },
+    {
+      "id": "contrib-005",
+      "name": "Vikram Patel",
+      "email": "vikram.patel@tattva.edu",
+      "roles": ["author"],
+      "profileUrl": "https://github.com/vikram-patel",
+      "joinedDate": "2023-11-05",
+      "bio": "Mathematics enthusiast and software engineer. Passionate about making quality math education accessible. B.Tech from IIT Bombay.",
+      "subjects": ["mathematics"],
+      "classes": [11, 12],
+      "contributions": {
+        "chapters": 3,
+        "reviews": 2,
+        "translations": 0
+      }
+    },
+    {
+      "id": "contrib-006",
+      "name": "Dr. Kavitha Rajan",
+      "email": "kavitha.rajan@tattva.edu",
+      "roles": ["reviewer", "author"],
+      "profileUrl": "https://github.com/kavitha-rajan",
+      "joinedDate": "2023-11-20",
+      "bio": "Associate Professor of Biology at Chennai University. Research focus: molecular biology and genetics. 15 years of teaching NCERT Biology at +2 level.",
+      "subjects": ["biology"],
+      "classes": [11, 12],
+      "contributions": {
+        "chapters": 4,
+        "reviews": 10,
+        "translations": 0
+      }
+    },
+    {
+      "id": "contrib-007",
+      "name": "Suresh Kulkarni",
+      "email": "suresh.k@tattva.edu",
+      "roles": ["translator"],
+      "profileUrl": "https://github.com/suresh-kulkarni",
+      "joinedDate": "2024-01-02",
+      "bio": "Marathi language expert and former high school science teacher. 20 years of experience in educational content translation and localisation.",
+      "locales": ["mr"],
+      "subjects": ["physics", "chemistry", "mathematics"],
+      "classes": [11, 12],
+      "contributions": {
+        "chapters": 0,
+        "reviews": 0,
+        "translations": 4
+      }
+    },
+    {
+      "id": "contrib-008",
+      "name": "Meera Iyer",
+      "email": "meera.iyer@tattva.edu",
+      "roles": ["editor", "author"],
+      "profileUrl": "https://github.com/meera-iyer",
+      "joinedDate": "2023-12-01",
+      "bio": "Freelance science editor and writer. Former editorial team member at a leading educational publisher. Specialises in making technical content accessible and engaging.",
+      "subjects": ["physics", "chemistry", "biology", "mathematics"],
+      "classes": [11, 12],
+      "contributions": {
+        "chapters": 2,
+        "reviews": 0,
+        "translations": 0
+      }
+    },
+    {
+      "id": "contrib-009",
+      "name": "Dr. Rajesh Kumar",
+      "email": "rajesh.kumar@tattva.edu",
+      "roles": ["reviewer"],
+      "profileUrl": "https://github.com/rajesh-kumar-phd",
+      "joinedDate": "2024-01-10",
+      "bio": "Senior Physics lecturer at Delhi University with 18 years of experience. Expert in mechanics and electromagnetism. Has reviewed multiple NCERT supplementary materials.",
+      "subjects": ["physics"],
+      "classes": [11, 12],
+      "contributions": {
+        "chapters": 0,
+        "reviews": 5,
+        "translations": 0
+      }
+    },
+    {
+      "id": "contrib-010",
+      "name": "Aruna Subramaniam",
+      "email": "aruna.s@tattva.edu",
+      "roles": ["translator", "reviewer"],
+      "profileUrl": "https://github.com/aruna-subramaniam",
+      "joinedDate": "2024-01-08",
+      "bio": "Tamil-language education consultant. Former NCERT regional coordinator for Tamil Nadu. Expert in pedagogical translation of science content.",
+      "locales": ["ta"],
+      "subjects": ["physics", "chemistry", "biology"],
+      "classes": [11, 12],
+      "contributions": {
+        "chapters": 0,
+        "reviews": 3,
+        "translations": 5
+      }
+    }
+  ],
+  "contributionGuidelines": {
+    "attributionPolicy": "All contributors must be listed in the frontmatter of every content file they contribute to. The contributors.json registry serves as the central source of truth for contributor details.",
+    "roleAssignment": "Contributors may hold multiple roles. Roles are assigned based on the type of contribution and may be updated by project maintainers.",
+    "recognition": "Contributors are recognised on the platform's contributor page, in release notes, and in per-file frontmatter. Translation contributors are credited separately from source content authors.",
+    "removalPolicy": "Contributors may request removal of their personal information by contacting privacy@tattva.edu. Contribution records (without PII) are retained for attribution history."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "tattva",
+  "private": true,
+  "description": "NCERT-aligned open education platform — India's answer to Wikipedia for learning",
+  "license": "MIT",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,mdx,json,yaml,yml,css}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,md,mdx,json,yaml,yml,css}\"",
+    "typecheck": "turbo typecheck",
+    "clean": "turbo clean && rimraf node_modules .turbo",
+    "db:push": "turbo db:push",
+    "db:generate": "turbo db:generate",
+    "db:migrate": "turbo db:migrate",
+    "db:studio": "turbo db:studio",
+    "content:build": "turbo content:build",
+    "content:validate": "turbo content:validate",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,mdx}": [
+      "prettier --write"
+    ],
+    "*.{json,yaml,yml,css}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "turbo": "^2.4.4",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@11.3.0",
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": ">=9.0.0"
+  }
+}

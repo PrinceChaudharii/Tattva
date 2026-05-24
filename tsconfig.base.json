@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    /* ── Strictness ─────────────────────────────────────────── */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    /* ── Language / Module ──────────────────────────────────── */
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+
+    /* ── JSX ────────────────────────────────────────────────── */
+    "jsx": "preserve",
+
+    /* ── Path aliases ───────────────────────────────────────── */
+    "baseUrl": ".",
+    "paths": {
+      "@tattva/ui": ["./packages/ui/src"],
+      "@tattva/ui/*": ["./packages/ui/src/*"],
+      "@tattva/database": ["./packages/database/src"],
+      "@tattva/database/*": ["./packages/database/src/*"],
+      "@tattva/auth": ["./packages/auth/src"],
+      "@tattva/auth/*": ["./packages/auth/src/*"],
+      "@tattva/content": ["./packages/content/src"],
+      "@tattva/content/*": ["./packages/content/src/*"],
+      "@tattva/search": ["./packages/search/src"],
+      "@tattva/search/*": ["./packages/search/src/*"],
+      "@tattva/analytics": ["./packages/analytics/src"],
+      "@tattva/analytics/*": ["./packages/analytics/src/*"],
+      "@tattva/editor": ["./packages/editor/src"],
+      "@tattva/editor/*": ["./packages/editor/src/*"],
+      "@tattva/shared-types": ["./packages/shared-types/src"],
+      "@tattva/shared-types/*": ["./packages/shared-types/src/*"],
+      "@tattva/config": ["./packages/config/src"],
+      "@tattva/config/*": ["./packages/config/src/*"],
+      "@tattva/logger": ["./packages/logger/src"],
+      "@tattva/logger/*": ["./packages/logger/src/*"],
+      "@tattva/typescript-config": ["./tooling/typescript"],
+      "@tattva/eslint-config": ["./tooling/eslint"],
+      "@tattva/prettier-config": ["./tooling/prettier"],
+      "@tattva/generators": ["./tooling/generators"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", ".next", ".turbo"]
+}

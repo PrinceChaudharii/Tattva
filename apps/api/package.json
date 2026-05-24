@@ -1,0 +1,31 @@
+{
+  "name": "@tattva/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tattva — API Server (Next.js Route Handlers)",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbopack --port 3003",
+    "build": "next build",
+    "start": "next start --port 3003",
+    "lint": "eslint src/ --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tattva/database": "workspace:*",
+    "@tattva/auth": "workspace:*",
+    "@tattva/shared-types": "workspace:*",
+    "@tattva/config": "workspace:*",
+    "@tattva/logger": "workspace:*",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,392 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-15",
+  "subjects": [
+    {
+      "slug": "physics",
+      "name": "Physics",
+      "nameHindi": "भौतिक विज्ञान",
+      "description": "Study of matter, energy, and the fundamental forces of nature",
+      "icon": "atom",
+      "colorTheme": {
+        "primary": "#3B82F6",
+        "secondary": "#1D4ED8",
+        "accent": "#93C5FD",
+        "background": "#EFF6FF"
+      },
+      "classes": {
+        "11": {
+          "chapterCount": 15,
+          "ncertReference": "Physics Textbook for Class XI",
+          "chapters": [
+            { "number": 1, "title": "Units and Measurements", "slug": "chapter-01-units-and-measurements" },
+            { "number": 2, "title": "Motion in a Straight Line", "slug": "chapter-02-motion-in-a-straight-line" },
+            { "number": 3, "title": "Motion in a Plane", "slug": "chapter-03-motion-in-a-plane" },
+            { "number": 4, "title": "Laws of Motion", "slug": "chapter-04-laws-of-motion" },
+            { "number": 5, "title": "Work, Energy and Power", "slug": "chapter-05-work-energy-and-power" },
+            { "number": 6, "title": "System of Particles and Rotational Motion", "slug": "chapter-06-system-of-particles-and-rotational-motion" },
+            { "number": 7, "title": "Gravitation", "slug": "chapter-07-gravitation" },
+            { "number": 8, "title": "Mechanical Properties of Solids", "slug": "chapter-08-mechanical-properties-of-solids" },
+            { "number": 9, "title": "Mechanical Properties of Fluids", "slug": "chapter-09-mechanical-properties-of-fluids" },
+            { "number": 10, "title": "Thermal Properties of Matter", "slug": "chapter-10-thermal-properties-of-matter" },
+            { "number": 11, "title": "Thermodynamics", "slug": "chapter-11-thermodynamics" },
+            { "number": 12, "title": "Kinetic Theory", "slug": "chapter-12-kinetic-theory" },
+            { "number": 13, "title": "Oscillations", "slug": "chapter-13-oscillations" },
+            { "number": 14, "title": "Waves", "slug": "chapter-14-waves" }
+          ]
+        },
+        "12": {
+          "chapterCount": 15,
+          "ncertReference": "Physics Textbook for Class XII",
+          "chapters": [
+            { "number": 1, "title": "Electric Charges and Fields", "slug": "chapter-01-electric-charges-and-fields" },
+            { "number": 2, "title": "Electrostatic Potential and Capacitance", "slug": "chapter-02-electrostatic-potential-and-capacitance" },
+            { "number": 3, "title": "Current Electricity", "slug": "chapter-03-current-electricity" },
+            { "number": 4, "title": "Moving Charges and Magnetism", "slug": "chapter-04-moving-charges-and-magnetism" },
+            { "number": 5, "title": "Magnetism and Matter", "slug": "chapter-05-magnetism-and-matter" },
+            { "number": 6, "title": "Electromagnetic Induction", "slug": "chapter-06-electromagnetic-induction" },
+            { "number": 7, "title": "Alternating Current", "slug": "chapter-07-alternating-current" },
+            { "number": 8, "title": "Electromagnetic Waves", "slug": "chapter-08-electromagnetic-waves" },
+            { "number": 9, "title": "Ray Optics and Optical Instruments", "slug": "chapter-09-ray-optics-and-optical-instruments" },
+            { "number": 10, "title": "Wave Optics", "slug": "chapter-10-wave-optics" },
+            { "number": 11, "title": "Dual Nature of Radiation and Matter", "slug": "chapter-11-dual-nature-of-radiation-and-matter" },
+            { "number": 12, "title": "Atoms", "slug": "chapter-12-atoms" },
+            { "number": 13, "title": "Nuclei", "slug": "chapter-13-nuclei" },
+            { "number": 14, "title": "Semiconductor Electronics: Materials, Devices and Simple Circuits", "slug": "chapter-14-semiconductor-electronics" }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "chemistry",
+      "name": "Chemistry",
+      "nameHindi": "रसायन विज्ञान",
+      "description": "Study of the composition, structure, properties, and reactions of matter",
+      "icon": "flask-conical",
+      "colorTheme": {
+        "primary": "#10B981",
+        "secondary": "#059669",
+        "accent": "#6EE7B7",
+        "background": "#ECFDF5"
+      },
+      "classes": {
+        "11": {
+          "chapterCount": 14,
+          "ncertReference": "Chemistry Textbook for Class XI",
+          "chapters": [
+            { "number": 1, "title": "Some Basic Concepts of Chemistry", "slug": "chapter-01-some-basic-concepts" },
+            { "number": 2, "title": "Structure of Atom", "slug": "chapter-02-structure-of-atom" },
+            { "number": 3, "title": "Classification of Elements and Periodicity in Properties", "slug": "chapter-03-classification-of-elements" },
+            { "number": 4, "title": "Chemical Bonding and Molecular Structure", "slug": "chapter-04-chemical-bonding" },
+            { "number": 5, "title": "Thermodynamics", "slug": "chapter-05-thermodynamics" },
+            { "number": 6, "title": "Equilibrium", "slug": "chapter-06-equilibrium" },
+            { "number": 7, "title": "Redox Reactions", "slug": "chapter-07-redox-reactions" },
+            { "number": 8, "title": "Organic Chemistry — Some Basic Principles and Techniques", "slug": "chapter-08-organic-chemistry-basic-principles" },
+            { "number": 9, "title": "Hydrocarbons", "slug": "chapter-09-hydrocarbons" }
+          ]
+        },
+        "12": {
+          "chapterCount": 16,
+          "ncertReference": "Chemistry Textbook for Class XII",
+          "chapters": [
+            { "number": 1, "title": "The Solid State", "slug": "chapter-01-solid-state" },
+            { "number": 2, "title": "Solutions", "slug": "chapter-02-solutions" },
+            { "number": 3, "title": "Electrochemistry", "slug": "chapter-03-electrochemistry" },
+            { "number": 4, "title": "Chemical Kinetics", "slug": "chapter-04-chemical-kinetics" },
+            { "number": 5, "title": "Surface Chemistry", "slug": "chapter-05-surface-chemistry" },
+            { "number": 6, "title": "General Principles and Processes of Isolation of Elements", "slug": "chapter-06-isolation-of-elements" },
+            { "number": 7, "title": "The p-Block Elements", "slug": "chapter-07-p-block-elements" },
+            { "number": 8, "title": "The d- and f-Block Elements", "slug": "chapter-08-d-and-f-block-elements" },
+            { "number": 9, "title": "Coordination Compounds", "slug": "chapter-09-coordination-compounds" },
+            { "number": 10, "title": "Haloalkanes and Haloarenes", "slug": "chapter-10-haloalkanes-and-haloarenes" },
+            { "number": 11, "title": "Alcohols, Phenols and Ethers", "slug": "chapter-11-alcohols-phenols-ethers" },
+            { "number": 12, "title": "Aldehydes, Ketones and Carboxylic Acids", "slug": "chapter-12-aldehydes-ketones-carboxylic-acids" },
+            { "number": 13, "title": "Amines", "slug": "chapter-13-amines" },
+            { "number": 14, "title": "Biomolecules", "slug": "chapter-14-biomolecules" },
+            { "number": 15, "title": "Polymers", "slug": "chapter-15-polymers" },
+            { "number": 16, "title": "Chemistry in Everyday Life", "slug": "chapter-16-chemistry-in-everyday-life" }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "mathematics",
+      "name": "Mathematics",
+      "nameHindi": "गणित",
+      "description": "The abstract science of number, quantity, and space",
+      "icon": "sigma",
+      "colorTheme": {
+        "primary": "#8B5CF6",
+        "secondary": "#6D28D9",
+        "accent": "#C4B5FD",
+        "background": "#F5F3FF"
+      },
+      "classes": {
+        "11": {
+          "chapterCount": 16,
+          "ncertReference": "Mathematics Textbook for Class XI",
+          "chapters": [
+            { "number": 1, "title": "Sets", "slug": "chapter-01-sets" },
+            { "number": 2, "title": "Relations and Functions", "slug": "chapter-02-relations-and-functions" },
+            { "number": 3, "title": "Trigonometric Functions", "slug": "chapter-03-trigonometric-functions" },
+            { "number": 4, "title": "Mathematical Induction", "slug": "chapter-04-mathematical-induction" },
+            { "number": 5, "title": "Complex Numbers and Quadratic Equations", "slug": "chapter-05-complex-numbers" },
+            { "number": 6, "title": "Linear Inequalities", "slug": "chapter-06-linear-inequalities" },
+            { "number": 7, "title": "Permutations and Combinations", "slug": "chapter-07-permutations-and-combinations" },
+            { "number": 8, "title": "Binomial Theorem", "slug": "chapter-08-binomial-theorem" },
+            { "number": 9, "title": "Sequences and Series", "slug": "chapter-09-sequences-and-series" },
+            { "number": 10, "title": "Straight Lines", "slug": "chapter-10-straight-lines" },
+            { "number": 11, "title": "Conic Sections", "slug": "chapter-11-conic-sections" },
+            { "number": 12, "title": "Introduction to Three Dimensional Geometry", "slug": "chapter-12-3d-geometry-introduction" },
+            { "number": 13, "title": "Limits and Derivatives", "slug": "chapter-13-limits-and-derivatives" },
+            { "number": 14, "title": "Mathematical Reasoning", "slug": "chapter-14-mathematical-reasoning" },
+            { "number": 15, "title": "Statistics", "slug": "chapter-15-statistics" },
+            { "number": 16, "title": "Probability", "slug": "chapter-16-probability" }
+          ]
+        },
+        "12": {
+          "chapterCount": 13,
+          "ncertReference": "Mathematics Textbook for Class XII",
+          "chapters": [
+            { "number": 1, "title": "Relations and Functions", "slug": "chapter-01-relations-and-functions" },
+            { "number": 2, "title": "Inverse Trigonometric Functions", "slug": "chapter-02-inverse-trigonometric-functions" },
+            { "number": 3, "title": "Matrices", "slug": "chapter-03-matrices" },
+            { "number": 4, "title": "Determinants", "slug": "chapter-04-determinants" },
+            { "number": 5, "title": "Continuity and Differentiability", "slug": "chapter-05-continuity-and-differentiability" },
+            { "number": 6, "title": "Application of Derivatives", "slug": "chapter-06-application-of-derivatives" },
+            { "number": 7, "title": "Integrals", "slug": "chapter-07-integrals" },
+            { "number": 8, "title": "Application of Integrals", "slug": "chapter-08-application-of-integrals" },
+            { "number": 9, "title": "Differential Equations", "slug": "chapter-09-differential-equations" },
+            { "number": 10, "title": "Vector Algebra", "slug": "chapter-10-vector-algebra" },
+            { "number": 11, "title": "Three Dimensional Geometry", "slug": "chapter-11-three-dimensional-geometry" },
+            { "number": 12, "title": "Linear Programming", "slug": "chapter-12-linear-programming" },
+            { "number": 13, "title": "Probability", "slug": "chapter-13-probability" }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "biology",
+      "name": "Biology",
+      "nameHindi": "जीव विज्ञान",
+      "description": "Study of living organisms, their structure, function, growth, and evolution",
+      "icon": "leaf",
+      "colorTheme": {
+        "primary": "#F59E0B",
+        "secondary": "#D97706",
+        "accent": "#FCD34D",
+        "background": "#FFFBEB"
+      },
+      "classes": {
+        "11": {
+          "chapterCount": 22,
+          "ncertReference": "Biology Textbook for Class XI",
+          "chapters": [
+            { "number": 1, "title": "The Living World", "slug": "chapter-01-the-living-world" },
+            { "number": 2, "title": "Biological Classification", "slug": "chapter-02-biological-classification" },
+            { "number": 3, "title": "Plant Kingdom", "slug": "chapter-03-plant-kingdom" },
+            { "number": 4, "title": "Animal Kingdom", "slug": "chapter-04-animal-kingdom" },
+            { "number": 5, "title": "Morphology of Flowering Plants", "slug": "chapter-05-morphology-of-flowering-plants" },
+            { "number": 6, "title": "Anatomy of Flowering Plants", "slug": "chapter-06-anatomy-of-flowering-plants" },
+            { "number": 7, "title": "Structural Organisation in Animals", "slug": "chapter-07-structural-organisation-in-animals" },
+            { "number": 8, "title": "Cell: The Unit of Life", "slug": "chapter-08-cell-the-unit-of-life" },
+            { "number": 9, "title": "Biomolecules", "slug": "chapter-09-biomolecules" },
+            { "number": 10, "title": "Cell Cycle and Cell Division", "slug": "chapter-10-cell-cycle-and-cell-division" },
+            { "number": 11, "title": "Photosynthesis in Higher Plants", "slug": "chapter-11-photosynthesis-in-higher-plants" },
+            { "number": 12, "title": "Respiration in Plants", "slug": "chapter-12-respiration-in-plants" },
+            { "number": 13, "title": "Plant Growth and Development", "slug": "chapter-13-plant-growth-and-development" },
+            { "number": 14, "title": "Breathing and Exchange of Gases", "slug": "chapter-14-breathing-and-exchange-of-gases" },
+            { "number": 15, "title": "Body Fluids and Circulation", "slug": "chapter-15-body-fluids-and-circulation" },
+            { "number": 16, "title": "Excretory Products and Their Elimination", "slug": "chapter-16-excretory-products" },
+            { "number": 17, "title": "Locomotion and Movement", "slug": "chapter-17-locomotion-and-movement" },
+            { "number": 18, "title": "Neural Control and Coordination", "slug": "chapter-18-neural-control-and-coordination" },
+            { "number": 19, "title": "Chemical Coordination and Integration", "slug": "chapter-19-chemical-coordination-and-integration" }
+          ]
+        },
+        "12": {
+          "chapterCount": 16,
+          "ncertReference": "Biology Textbook for Class XII",
+          "chapters": [
+            { "number": 1, "title": "Reproduction in Organisms", "slug": "chapter-01-reproduction-in-organisms" },
+            { "number": 2, "title": "Sexual Reproduction in Flowering Plants", "slug": "chapter-02-sexual-reproduction-in-flowering-plants" },
+            { "number": 3, "title": "Human Reproduction", "slug": "chapter-03-human-reproduction" },
+            { "number": 4, "title": "Reproductive Health", "slug": "chapter-04-reproductive-health" },
+            { "number": 5, "title": "Principles of Inheritance and Variation", "slug": "chapter-05-principles-of-inheritance" },
+            { "number": 6, "title": "Molecular Basis of Inheritance", "slug": "chapter-06-molecular-basis-of-inheritance" },
+            { "number": 7, "title": "Evolution", "slug": "chapter-07-evolution" },
+            { "number": 8, "title": "Human Health and Disease", "slug": "chapter-08-human-health-and-disease" },
+            { "number": 9, "title": "Strategies for Enhancement in Food Production", "slug": "chapter-09-strategies-for-food-production" },
+            { "number": 10, "title": "Microbes in Human Welfare", "slug": "chapter-10-microbes-in-human-welfare" },
+            { "number": 11, "title": "Biotechnology: Principles and Processes", "slug": "chapter-11-biotechnology-principles" },
+            { "number": 12, "title": "Biotechnology and Its Applications", "slug": "chapter-12-biotechnology-applications" },
+            { "number": 13, "title": "Organisms and Populations", "slug": "chapter-13-organisms-and-populations" },
+            { "number": 14, "title": "Ecosystem", "slug": "chapter-14-ecosystem" },
+            { "number": 15, "title": "Biodiversity and Conservation", "slug": "chapter-15-biodiversity-and-conservation" }
+          ]
+        }
+      }
+    },
+    {
+      "slug": "english",
+      "name": "English",
+      "nameHindi": "अंग्रेज़ी",
+      "description": "English language and literature — reading, writing, and comprehension",
+      "icon": "book-open",
+      "colorTheme": {
+        "primary": "#EF4444",
+        "secondary": "#B91C1C",
+        "accent": "#FCA5A5",
+        "background": "#FEF2F2"
+      },
+      "classes": {
+        "11": {
+          "chapterCount": 20,
+          "ncertReference": "Hornbill & Snapshot — English Textbook for Class XI",
+          "chapters": []
+        },
+        "12": {
+          "chapterCount": 22,
+          "ncertReference": "Flamingo & Vistas — English Textbook for Class XII",
+          "chapters": []
+        }
+      }
+    },
+    {
+      "slug": "hindi",
+      "name": "Hindi",
+      "nameHindi": "हिंदी",
+      "description": "Hindi language and literature — गद्य, पद्य, और व्याकरण",
+      "icon": "languages",
+      "colorTheme": {
+        "primary": "#F97316",
+        "secondary": "#C2410C",
+        "accent": "#FDBA74",
+        "background": "#FFF7ED"
+      },
+      "classes": {
+        "11": {
+          "chapterCount": 20,
+          "ncertReference": "Hindi Textbook for Class XI (Aroh & Vitan)",
+          "chapters": []
+        },
+        "12": {
+          "chapterCount": 22,
+          "ncertReference": "Hindi Textbook for Class XII (Aroh & Vitan)",
+          "chapters": []
+        }
+      }
+    },
+    {
+      "slug": "history",
+      "name": "History",
+      "nameHindi": "इतिहास",
+      "description": "Study of past events, civilisations, and the development of human societies",
+      "icon": "landmark",
+      "colorTheme": {
+        "primary": "#A855F7",
+        "secondary": "#7E22CE",
+        "accent": "#D8B4FE",
+        "background": "#FAF5FF"
+      },
+      "classes": {
+        "11": {
+          "chapterCount": 16,
+          "ncertReference": "Themes in World History — Class XI",
+          "chapters": []
+        },
+        "12": {
+          "chapterCount": 15,
+          "ncertReference": "Themes in Indian History — Class XII",
+          "chapters": []
+        }
+      }
+    },
+    {
+      "slug": "geography",
+      "name": "Geography",
+      "nameHindi": "भूगोल",
+      "description": "Study of Earth's landscapes, environments, and the relationship between people and their environments",
+      "icon": "globe-2",
+      "colorTheme": {
+        "primary": "#14B8A6",
+        "secondary": "#0D9488",
+        "accent": "#5EEAD4",
+        "background": "#F0FDFA"
+      },
+      "classes": {
+        "11": {
+          "chapterCount": 16,
+          "ncertReference": "Fundamentals of Physical Geography — Class XI",
+          "chapters": []
+        },
+        "12": {
+          "chapterCount": 12,
+          "ncertReference": "Fundamentals of Human Geography — Class XII",
+          "chapters": []
+        }
+      }
+    },
+    {
+      "slug": "political-science",
+      "name": "Political Science",
+      "nameHindi": "राजनीति विज्ञान",
+      "description": "Study of political systems, governance, constitutions, and international relations",
+      "icon": "scale",
+      "colorTheme": {
+        "primary": "#6366F1",
+        "secondary": "#4338CA",
+        "accent": "#A5B4FC",
+        "background": "#EEF2FF"
+      },
+      "classes": {
+        "11": {
+          "chapterCount": 20,
+          "ncertReference": "Political Theory & Indian Constitution at Work — Class XI",
+          "chapters": []
+        },
+        "12": {
+          "chapterCount": 18,
+          "ncertReference": "Contemporary World Politics & Politics in India since Independence — Class XII",
+          "chapters": []
+        }
+      }
+    },
+    {
+      "slug": "economics",
+      "name": "Economics",
+      "nameHindi": "अर्थशास्त्र",
+      "description": "Study of production, distribution, and consumption of goods and services",
+      "icon": "trending-up",
+      "colorTheme": {
+        "primary": "#EC4899",
+        "secondary": "#BE185D",
+        "accent": "#F9A8D4",
+        "background": "#FDF2F8"
+      },
+      "classes": {
+        "11": {
+          "chapterCount": 18,
+          "ncertReference": "Indian Economic Development & Statistics for Economics — Class XI",
+          "chapters": []
+        },
+        "12": {
+          "chapterCount": 14,
+          "ncertReference": "Introductory Microeconomics & Macroeconomics — Class XII",
+          "chapters": []
+        }
+      }
+    }
+  ],
+  "supportedLocales": [
+    { "code": "en", "name": "English", "nameNative": "English", "direction": "ltr" },
+    { "code": "hi", "name": "Hindi", "nameNative": "हिंदी", "direction": "ltr" },
+    { "code": "mr", "name": "Marathi", "nameNative": "मराठी", "direction": "ltr" },
+    { "code": "ta", "name": "Tamil", "nameNative": "தமிழ்", "direction": "ltr" },
+    { "code": "te", "name": "Telugu", "nameNative": "తెలుగు", "direction": "ltr" },
+    { "code": "kn", "name": "Kannada", "nameNative": "ಕನ್ನಡ", "direction": "ltr" },
+    { "code": "bn", "name": "Bengali", "nameNative": "বাংলা", "direction": "ltr" },
+    { "code": "gu", "name": "Gujarati", "nameNative": "ગુજરાતી", "direction": "ltr" },
+    { "code": "ur", "name": "Urdu", "nameNative": "اردو", "direction": "rtl" }
+  ],
+  "classRange": { "min": 6, "max": 12 }
+}

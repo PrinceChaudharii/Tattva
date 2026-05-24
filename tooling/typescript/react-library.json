@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./base.json",
+  "compilerOptions": {
+    /* ── JSX ────────────────────────────────────────────────── */
+    "jsx": "react-jsx",
+
+    /* ── Library output settings ────────────────────────────── */
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+
+    /* ── Module ─────────────────────────────────────────────── */
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "outDir": "./dist",
+
+    /* ── React library specific ─────────────────────────────── */
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "target": "ES2022"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx", "**/*.spec.ts", "**/*.spec.tsx"]
+}
